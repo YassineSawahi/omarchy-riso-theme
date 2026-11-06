@@ -1,0 +1,49 @@
+# Riso - fluorescent pink and teal ink on warm newsprint.
+#
+# Every color starts from a real Risograph ink (Fluorescent Pink #ff48b0,
+# Teal #00838a, Blue #0078bf, Bright Red #f15060, Orange #ff6c2f,
+# Sunflower #ffb511, Green #00a95c, Brown #925f52) and is darkened only as far
+# as it needs to be readable on the paper:
+#   normal ANSI slots and accent  >= 4.5:1 against background
+#   bright ANSI slots and muted   >= 3.0:1
+# The raw, unreadable-as-text inks live where nothing has to be read: the
+# window border below and the wallpapers, which were printed through these
+# same two inks.
+
+mode = "light"
+
+accent = "#d40078"
+selection = "#faec7d"
+muted = "#948978"
+
+background = "#f5efe3"
+dark_background = "#eee8dd"
+darker_background = "#e4ded4"
+lighter_background = "#ebe5da"
+
+foreground = "#2a2833"
+dark_foreground = "#867b6a"
+light_foreground = "#46424f"
+bright_foreground = "#16141b"
+
+red = "#d91125"
+yellow = "#926400"
+orange = "#c73a00"
+green = "#007e45"
+cyan = "#007980"
+blue = "#0072b5"
+magenta = "#d40078"
+brown = "#925f52"
+
+bright_red = "#f15060"
+bright_yellow = "#b87f00"
+bright_green = "#009f56"
+bright_cyan = "#00838a"
+bright_blue = "#0078bf"
+bright_magenta = "#ff2aa3"
+
+# Focused windows get the two raw inks overprinted: fluorescent pink running
+# into teal, passing through the violet the two make where they overlap.
+# Read by hyprland.lua.tpl's hypr_gradient helper, so no hyprland.lua needed.
+hyprland_active_border = "rgba(ff48b0ff) rgba(00838aff) 45deg"
+hyprland_inactive_border = "rgba(c8c3bcaa)"
